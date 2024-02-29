@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 2</title>
+    <script>
+
+    /* 
+        Escreva um script para ler o número total de eleitores de um município, o número de votos brancos, nulos e validos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores
+        a. Bonus: A soma dos números não pode passar o total de eleitores.
+    */
+
+    const total = Number(prompt('Digite a quantidade total de eleitores!'));
+    const brancos = Number(prompt('Digite o número de votos brancos!'));
+    const nulos = Number(prompt('Digite o número de votos nulos'));
+    const validos = Number(prompt('Digite o número de votos validos'));
+
+    const perbrancos = brancos / total * 100
+
+    const pernulos = nulos / total * 100
+
+    const pervalidos = validos / total * 100
+
+    const votoscontados = brancos + nulos + validos;
+
+    const validar = total
+
+    if (validar < votoscontados){
+        alert("A soma dos números passou o total de eleitores!")
+    } else {
+        alert('Brancos: ' + perbrancos + '%')
+        alert('Nulos: ' + pernulos + '%')
+        alert
+        ('Validos: ' + pervalidos + '%')
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
