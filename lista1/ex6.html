@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 6</title>
+
+    <script>
+
+    /*Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um script que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.*/
+
+    const fixo = Number(prompt('Digite o valor do salário fixo por mês do funcionário: '))
+    const carros = Number(prompt('Digite a quantidade de carros vendidos: '))
+    const comissao = Number(prompt('Digite o valor da comissão fixa por carro: '))
+    const vendas = Number(prompt('Digite o valor total de suas vendas: '))
+
+    const comissaocarros = carros * comissao
+    const comissaovendas = ( 5 / 100 ) * vendas
+
+    const total = fixo + comissaocarros + comissaovendas
+
+    alert(`O valor final do salário é de ${total}`)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
